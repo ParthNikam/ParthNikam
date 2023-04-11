@@ -6,7 +6,7 @@ Interested in Machine Learning, Blockchain, Systems Design and Penetration Testi
 
 ---
 <a href="https://discord.com/users/859964823542431746">
-  <img width="40%" src="https://lanyard-profile-readme.vercel.app/api/859964823542431746?hideTimestamp=true&idleMessage=Idle%20%20at%20the%20moment..." align="right" />
+  <img width="40%" src="https://lanyard-profile-readme.vercel.app/api/893762371770802227?hideTimestamp=true&idleMessage=Idle%20%20at%20the%20moment..." align="right" />
 </a>
 
 
