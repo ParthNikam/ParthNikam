@@ -11,19 +11,19 @@ Interested in Machine Learning, Blockchain, Systems Design and Penetration Testi
 
 ---
 <a href="https://discord.com/users/859964823542431746">
-  <img width="40%" src="https://lanyard-profile-readme.vercel.app/api/893762371770802227?hideTimestamp=true&idleMessage=Idle%20%20at%20the%20moment..." align="right" />
+  <img width="40%" src="https://lanyard-profile-readme.vercel.app/api/859964823542431746?hideTimestamp=true&idleMessage=Idle%20%20at%20the%20moment..." align="right" />
 </a>
 
 
 ### My Stack:
-![Web Development](https://skillicons.dev/icons?i=rect,js,ts,html,css3,mysql,nextjs,nodejs,express&perline=10)
+![Web Development](https://skillicons.dev/icons?i=react,js,ts,html,css3,mysql,nextjs,nodejs,express&perline=10)
 
-![Other](https://skillicons.dev/icons?i=py,cpp,git,tensorflow,docker,lua,linux,&perline=10)
+![Other](https://skillicons.dev/icons?i=py,c,cpp,git,tensorflow,docker,linux,&perline=10)
 <br>
 
 
-<a href="https://devcomp.xyz" target="_blank"><img alt="website" align="center" src="https://img.shields.io/badge/-Website-0D1117?style=flat-square&logo=googlechrome&logoColor=white"></a>
-<a href="https://devcomp.xyz/discord" target="_blank"><img alt="discord" align="center" src="https://img.shields.io/badge/-Discord-0D1117?style=flat-square&logo=discord&logoColor=dark-blue"></a>
+<a href="https://" target="_blank"><img alt="website" align="center" src="https://img.shields.io/badge/-Website-0D1117?style=flat-square&logo=googlechrome&logoColor=white"></a>
+<a href="https://discordapp.com/users/859964823542431746" target="_blank"><img alt="discord" align="center" src="https://img.shields.io/badge/-Discord-0D1117?style=flat-square&logo=discord&logoColor=dark-blue"></a>
 
 
 [![Hits](https://hits-app.vercel.app/hits?url=https://github.com/ParthNikam&bgLeft=444444&bgRight=ADD8E6&label=visits)](https://hits-app.vercel.app/) 
