@@ -4,11 +4,6 @@ Hey! My name's Parth, 16 year old full stack web developer and competitive progr
 Interested in Machine Learning, Blockchain, Systems Design and Penetration Testing.
 
 
-<a href="https://discord.com/users/859964823542431746">
-  <img width="40%" src="https://lanyard-profile-readme.vercel.app/api/859964823542431746?hideTimestamp=true&idleMessage=Idle%20%20at%20the%20moment..." align="right" />
-</a>
-
-
 ### My Stack:
 ![Web Development](https://skillicons.dev/icons?i=react,js,ts,mysql,nextjs,nodejs,express&perline=10)<br>
 ![Other](https://skillicons.dev/icons?i=py,c,cpp,git,tensorflow,docker,linux,&perline=10)
