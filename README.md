@@ -4,15 +4,10 @@ Hey! My name's Parth, 16 year old full stack web developer and competitive progr
 Interested in Machine Learning, Blockchain, Systems Design and Penetration Testing.
 
 
----
-<a href="https://discord.com/users/859964823542431746">
-  <img width="40%" src="https://lanyard-profile-readme.vercel.app/api/893762371770802227?hideTimestamp=true&idleMessage=Idle%20%20at%20the%20moment..." align="right" />
-</a>
 
 
 ### My Stack:
-![Web Development](https://skillicons.dev/icons?i=react,js,ts,html,css3,mysql,nextjs,nodejs,express&perline=10)
-
+![Web Development](https://skillicons.dev/icons?i=react,js,ts,mysql,nextjs,nodejs,express&perline=10)
 ![Other](https://skillicons.dev/icons?i=py,c,cpp,git,tensorflow,docker,linux,&perline=10)
 <br>
 
@@ -25,4 +20,4 @@ Interested in Machine Learning, Blockchain, Systems Design and Penetration Testi
 [![Hits](https://hits-app.vercel.app/hits?url=https://github.com/ParthNikam&bgLeft=444444&bgRight=ADD8E6&label=visits)](https://hits-app.vercel.app/) 
 
 
-<p style="color=purple">I'd love for you to reach out even if you just want to say a quick hi!</p>
+<p style="color:purple">I'd love for you to reach out even if you just want to say a quick hi!</p>
