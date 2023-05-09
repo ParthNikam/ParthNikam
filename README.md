@@ -5,7 +5,7 @@ Interested in Machine Learning, Blockchain, Systems Design and Penetration Testi
 
 
 ### My Stack:
-![Web Development](https://skillicons.dev/icons?i=react,js,ts,mysql,nextjs,nodejs,express&perline=10)<br>
+![Web Development](https://skillicons.dev/icons?i=react,js,ts,mysql,nextjs,nodejs,express,dart,flutter&perline=10)<br>
 ![Other](https://skillicons.dev/icons?i=py,c,cpp,git,tensorflow,docker,linux,&perline=10)
 <br>
 
