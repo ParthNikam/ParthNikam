@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=30&color=9069F7&lines=%F0%9F%91%8B+Hiya+I'm+Parth!)](https://git.io/typing-svg) 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=30&color=9069F7&lines=%F0%9F%91%8B+Hey+I'm+Parth!)](https://git.io/typing-svg) 
 
 Hey! My name's Parth, 16 year old full stack web developer and competitive programmer.<br>
 Interested in Machine Learning, Large Language Models and Systems Design.
