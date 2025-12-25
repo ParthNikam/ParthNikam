@@ -1,5 +1,8 @@
 {
   "bunVersion": "1.x",
+  "framework": "nextjs",
+  "installCommand": "bun install",
+  "buildCommand": "bun --bun next build",
   "routes": [
     {
       "src": "/(.*)",
