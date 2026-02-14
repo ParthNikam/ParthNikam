@@ -9,9 +9,9 @@ const projects = [
     title: "TRYM",
     subtitle: "Student Performance Analytics",
     description: "A web app for tracking students' test performance and predicting their future performance. Built with Next.js, Supabase, and custom ML models for predictive analytics.",
-    github: "https://github.com/ParthNikam",
+    github: "https://github.com/ParthNikam/track-your-marks-V3",
     demo: "https://example.com",
-    image: "https://github.com/ParthNikam/ParthNikam/blob/main/public/trym.png"
+    image: "/trym.png"
   },
   {
     id: "drone-swarm",
@@ -20,7 +20,7 @@ const projects = [
     description: "Developed algorithms for autonomous drone swarm coordination and obstacle avoidance. Focused on decentralized control and cooperative behavior in complex environments.",
     github: "https://github.com/ParthNikam",
     demo: "https://example.com",
-    image: "https://github.com/ParthNikam/ParthNikam/blob/main/public/drone_swarm.png"
+    image: "/drone_swarm.png"
   }
 ]
 
@@ -65,6 +65,7 @@ export default function ProjectsPage() {
                   alt={project.title}
                   fill
                   className="object-cover"
+                  priority
                 />
               </div>
             </div>
