@@ -4,6 +4,6 @@ Currently working on building drone swarm algorithms for autonomous drones
 I'm an ML engineer with a knack for building web applications
 Everything I do stems from an intrinsic curiosity to understand how things work and and how can they provide value to people
 
-I'm currently learning LLMs from scratch, down to the matrix multiplication level, cause I don't just want to be an API calling prompt monkey and actually have a deeper understanding of their architecture and computational limitations
+Currently focusing on learning LLM architectures from scratch down to the matrix multiplication level
 
 You can find me on GitHub and LinkedIn
