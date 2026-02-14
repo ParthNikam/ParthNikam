@@ -19,7 +19,7 @@ export default function Home() {
           </p>
 
           <p className="text-lg text-gray-600 leading-relaxed">
-            I'm currently learning LLMs from scratch, down to the matrix multiplication level, cause I don't just want to be an <i>API calling prompt monkey</i> and actually have a deeper understanding of their architecture and computational limitations<br/>
+            Currently focusing on learning LLM architectures from scratch down to the matrix multiplication level
           </p>
 
 
