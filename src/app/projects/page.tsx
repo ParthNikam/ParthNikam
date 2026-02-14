@@ -11,7 +11,7 @@ const projects = [
     description: "A web app for tracking students' test performance and predicting their future performance. Built with Next.js, Supabase, and custom ML models for predictive analytics.",
     github: "https://github.com/ParthNikam",
     demo: "https://example.com",
-    image: "/trym.png"
+    image: "https://github.com/ParthNikam/ParthNikam/blob/main/public/trym.png"
   },
   {
     id: "drone-swarm",
@@ -20,16 +20,7 @@ const projects = [
     description: "Developed algorithms for autonomous drone swarm coordination and obstacle avoidance. Focused on decentralized control and cooperative behavior in complex environments.",
     github: "https://github.com/ParthNikam",
     demo: "https://example.com",
-    image: "/drone_swarm.png"
-  },
-  {
-    id: "project-3",
-    title: "Vanish Analytics",
-    subtitle: "Real-time Data Visualization",
-    description: "A high-performance dashboard featuring real-time data streaming and interactive visualizations using D3.js and WebSockets.",
-    github: "https://github.com/ParthNikam",
-    demo: "https://example.com",
-    image: "/trym.png" // Reusing for variety if needed, or I could generate more
+    image: "https://github.com/ParthNikam/ParthNikam/blob/main/public/drone_swarm.png"
   }
 ]
 
