@@ -1,77 +1,67 @@
 "use client"
 
-import Image from "next/image"
 import Link from "next/link"
+import { Github, ExternalLink } from "lucide-react"
 
 const projects = [
-  {
-    id: "trym",
-    title: "TRYM",
-    subtitle: "Student Performance Analytics",
-    description: "A web app for tracking students' test performance and predicting their future performance. Built with Next.js, Supabase, and custom ML models for predictive analytics.",
-    github: "https://github.com/ParthNikam/track-your-marks-V3",
-    demo: "https://example.com",
-    image: "/trym.png"
-  },
+  
   {
     id: "drone-swarm",
     title: "Swarm Intelligence",
     subtitle: "Autonomous Drone Coordination",
-    description: "Developed algorithms for autonomous drone swarm coordination and obstacle avoidance. Focused on decentralized control and cooperative behavior in complex environments.",
+    description: "Developing algorithms for autonomous drone swarm coordination and obstacle avoidance using RL. Focused on decentralized control and cooperative behavior in complex environments.",
     github: "https://github.com/ParthNikam",
+    demo: "",
+  },
+  {
+    id: "trym",
+    title: "TRYM (aka. Track Your Marks)",
+    subtitle: "Student Performance Analytics",
+    description: "A web app for tracking students' test performance and predicting their future performance using KNN and Logistic Regression. Built with React.js and Firebase.",
+    github: "https://github.com/ParthNikam/track-your-marks-V3",
     demo: "https://example.com",
-    image: "/drone_swarm.png"
-  }
+  },
 ]
 
 export default function ProjectsPage() {
   return (
-    <div className="flex-1 h-full overflow-y-auto bg-white p-12 lg:p-24">
-      <div className="max-w-6xl">
-        <div className="flex flex-col gap-24">
-          {projects.map((project) => (
-            <div key={project.id} className="group flex flex-col md:flex-row gap-12 items-start">
-              {/* Text Content */}
-              <div className="flex-1 space-y-6">
-                <div>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-1">{project.title}</h2>
-                  <p className="text-lg font-medium text-gray-500">{project.subtitle}</p>
-                </div>
-                
-                <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-                  {project.description}
-                </p>
-                
-                <div className="flex gap-6 items-center pt-2">
-                  <Link 
-                    href={project.github}
-                    className="text-sm font-bold text-gray-900 hover:opacity-70 transition-opacity inline-flex items-center gap-2"
-                  >
-                    GitHub
-                  </Link>
-                  <Link 
-                    href={project.demo}
-                    className="text-sm font-bold text-gray-900 hover:opacity-70 transition-opacity inline-flex items-center gap-2"
-                  >
-                    Live Demo
-                  </Link>
-                </div>
-              </div>
-              
-              {/* Image Content */}
-              <div className="w-full md:w-[450px] aspect-[3/2] relative rounded-xl overflow-hidden bg-gray-100 shadow-2xl transition-transform duration-500">
-                <Image 
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
+    <main className="flex-1 min-h-0 overflow-y-auto bg-white p-4 sm:p-6 md:p-12 lg:p-24">
+      <div className="max-w-2xl space-y-12">
+        {projects.map((project) => (
+          <article key={project.id}>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-2">{project.title}</h2>
+            <div className="flex flex-wrap gap-6 my-2">
+              {project.github && (
+                <Link
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-md underline font-semibold hover:opacity-70 transition-opacity"
+                >
+                  <Github className="size-4 shrink-0" />
+                  GitHub
+                </Link>
+              )}
+              {project.demo && (
+                <Link
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-md underline font-semibold hover:opacity-70 transition-opacity"
+                >
+                  <ExternalLink className="size-4 shrink-0" />
+                  Live Demo
+                </Link>
+              )}
             </div>
-          ))}
-        </div>
+
+            {/* <p className="text-gray-500 mb-3">{project.subtitle}</p> */}
+            <p className="text-xl text-gray-600 leading-relaxed mb-2">
+              {project.description}
+            </p>
+          </article>
+        ))}
       </div>
-    </div>
+    </main>
   )
 }

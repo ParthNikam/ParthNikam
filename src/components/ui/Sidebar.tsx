@@ -1,25 +1,56 @@
+"use client"
+
 import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { cn } from "../../lib/utils"
+
+const navLinks = [
+  { href: "/", label: "About" },
+  { href: "/projects", label: "Projects" },
+]
 
 export default function Sidebar() {
-    return (
-    <div className="flex flex-col w-64 h-full p-6 gap-2">
-      <div className="mb-8 px-2">
-        <h2 className="text-xl font-bold text-gray-900 leading-none">Parth Nikam</h2>
+  const pathname = usePathname()
+
+  const linkClass = (href: string) =>
+    cn(
+      "px-3 py-2 text-lg font-medium rounded-lg transition-colors",
+      pathname === href ? "text-gray-900" : "text-gray-500 hover:text-gray-900"
+    )
+
+  const mobileLinkClass = (href: string) =>
+    cn(
+      "text-sm font-medium transition-colors",
+      pathname === href ? "text-gray-900" : "text-gray-500 hover:text-gray-900"
+    )
+
+  return (
+    <>
+      {/* Desktop sidebar */}
+      <aside className="hidden md:flex flex-col w-64 min-w-[16rem] h-full p-6 gap-2">
+        <div className="mb-8 px-2">
+          <h2 className="text-2xl font-bold text-gray-900 leading-none">Parth Nikam</h2>
+        </div>
+        <nav className="flex flex-col gap-1">
+          {navLinks.map(({ href, label }) => (
+            <Link key={href} href={href} className={linkClass(href)}>
+              {label}
+            </Link>
+          ))}
+        </nav>
+      </aside>
+
+      {/* Mobile: top bar with name + links */}
+      <div className="md:hidden flex items-center gap-6 w-full h-14 px-4 bg-white shrink-0">
+        <h2 className="text-lg font-bold text-gray-900">Parth Nikam</h2>
+        <nav className="flex items-center gap-4">
+          {navLinks.map(({ href, label }) => (
+            <Link key={href} href={href} className={mobileLinkClass(href)}>
+              {label}
+            </Link>
+          ))}
+        </nav>
       </div>
-      <nav className="flex flex-col gap-1">
-        <Link 
-          href="/" 
-          className="px-3 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900 transition-colors"
-        >
-          About
-        </Link>
-        <Link 
-          href="/projects" 
-          className="px-3 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900 transition-colors"
-        >
-          Projects
-        </Link>
-      </nav>
-    </div>
-    );
+    </>
+  )
 }
