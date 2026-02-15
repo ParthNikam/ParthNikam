@@ -1,26 +1,84 @@
 "use client"
 
-import Link from "next/link";
+import Link from "next/link"
+import { Github, ExternalLink } from "lucide-react"
+
+const projects = [
+  {
+    id: "drone-swarm",
+    title: "Swarm Intelligence",
+    subtitle: "Autonomous Drone Coordination",
+    description: "Developing algorithms for autonomous drone swarm coordination and obstacle avoidance using RL. Focused on decentralized control and cooperative behavior in complex environments.",
+    github: "https://github.com/ParthNikam",
+    demo: "",
+  },
+  {
+    id: "trym",
+    title: "TRYM (aka. Track Your Marks)",
+    subtitle: "Student Performance Analytics",
+    description: "A web app for tracking students' test performance and predicting their future performance using KNN and Logistic Regression. Built with React.js and Firebase.",
+    github: "https://github.com/ParthNikam/track-your-marks-V3",
+    demo: "https://example.com",
+  },
+]
 
 export default function Home() {
   return (
-    <main className="flex-1 min-h-0 overflow-y-auto bg-white p-4 sm:p-6 md:p-12 lg:p-24">
-      <div className="prose prose-gray max-w-2xl space-y-8">
+    <main className="md:flex flex-1 flex-row min-h-0 overflow-y-auto bg-white gap-8 p-4 sm:p-6 lg:p-32">
+      <div className="prose prose-gray max-w-lg">
+        <p className="text-2xl font-bold">Parth Nikam</p>
         <p className="text-xl text-gray-600 leading-relaxed">
-          19 years old, studying Robotics and AI at MIT Bangalore. Currently working on building drone swarm algorithms for autonomous drones.
+          19 years old, studying Robotics and AI at MIT Bangalore. Currently working on building RL based algorithms for drone swarms.
+        </p>
+        <p className="text-xl text-gray-600 leading-relaxed">
+          Currently focusing on learning LLM architectures from scratch down to the matrix multiplication level.
         </p>
 
         <p className="text-xl text-gray-600 leading-relaxed">
           I'm a full-stack ML engineer with a knack for building web applications and machine learning models. Everything I do stems from an intrinsic curiosity to understand how things work and how they can provide value to people.
         </p>
 
-        <p className="text-xl text-gray-600 leading-relaxed">
-          Currently focusing on learning LLM architectures from scratch down to the matrix multiplication level.
-        </p>
 
         <p className="text-xl text-gray-600 leading-relaxed">
           You can find me on <Link href="https://github.com/ParthNikam">GitHub</Link> and <Link href="https://linkedin.com/in/parthnikam108">LinkedIn</Link>.
         </p>
+      </div>
+
+      <div className="max-w-2xl space-y-8 mt-16">
+        <h1 className="text-2xl font-semibold text-gray-900">Showcase Work</h1>
+        {projects.map((project) => (
+          <article key={project.id}>
+            <h2 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h2>
+            <div className="flex flex-wrap gap-6 my-2">
+              {project.github && (
+                <Link
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-md underline font-semibold hover:opacity-70 transition-opacity"
+                >
+                  <Github className="size-4 shrink-0" />
+                  GitHub
+                </Link>
+              )}
+              {project.demo && (
+                <Link
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-md underline font-semibold hover:opacity-70 transition-opacity"
+                >
+                  <ExternalLink className="size-4 shrink-0" />
+                  Live Demo
+                </Link>
+              )}
+            </div>
+
+            <p className="text-xl text-gray-600 leading-relaxed mb-2">
+              {project.description}
+            </p>
+          </article>
+        ))}
       </div>
     </main>
   );
