@@ -60,10 +60,6 @@ export default function Home() {
               <a
                 href={project.demo ?? ""}
                 className={project.demo ? "text-blue-600 underline hover:opacity-80 transition-opacity" : "text-gray-800"}
-                onClick={(e) => project.demo && e.preventDefault()}
-                onKeyDown={(e) => project.demo && e.preventDefault()}
-                tabIndex={project.demo ? 0 : -1}
-                aria-disabled={project.demo ? false : true}
               >
                 {project.title}
               </a>
