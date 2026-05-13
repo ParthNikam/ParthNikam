@@ -150,7 +150,7 @@ function ProjectCard({ project }: { project: Project }) {
 
 export default function Work() {
   return (
-    <div className="flex min-h-screen flex-col overflow-y-auto">
+    <div className="flex flex-col h-full">
       <div className="max-w-2xl w-full">
         <div className="space-y-8">
           {/* <div>
@@ -158,7 +158,7 @@ export default function Work() {
             <p className="text-base text-foreground/60">stuff i've worked on i think is cool nuf to show</p>
           </div> */}
 
-          <div className="space-y-8">
+          <div className="space-y-8 pb-10">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}

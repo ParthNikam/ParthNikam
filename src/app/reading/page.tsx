@@ -1,6 +1,6 @@
 export default function Reading() {
   return (
-    <div className="flex min-h-screen flex-col overflow-y-auto">
+    <div className="flex flex-col h-full">
       <div className="max-w-2xl w-full">
         <div className="space-y-6">
           <div>

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function Sidebar() {
+export default function Sidebar({ className }: { className?: string }) {
   const pathname = usePathname();
 
   const navItems = [
@@ -22,7 +22,7 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="flex flex-col gap-4 w-24 lg:w-32 min-w-[5.5rem] py-10 shrink-0 px-1">
+    <aside className={`flex flex-col gap-4 w-24 lg:w-32 min-w-[5.5rem] py-10 shrink-0 px-1 ${className || ''}`}>
       <nav className="space-y-2">
         {navItems.map((item) => {
           const isActive = pathname === item.href;
