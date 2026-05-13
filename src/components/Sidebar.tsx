@@ -22,15 +22,15 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="w-48 bg-white/50 backdrop-blur-sm p-20">
-      <nav className="space-y-1">
+    <aside className="flex flex-col gap-4 w-24 lg:w-32 min-w-[5.5rem] py-10 shrink-0 px-1">
+      <nav className="space-y-2">
         {navItems.map((item) => {
           const isActive = pathname === item.href;
           return (
             <Link
               key={item.href}
               href={item.href}
-              className={`block text-base  transition-all ${
+              className={`block text-sm transition-all ${
                 isActive
                   ? "font-semibold text-foreground"
                   : "font-normal text-foreground/60 hover:text-foreground"
@@ -42,16 +42,16 @@ export default function Sidebar() {
         })}
       </nav>
 
-      <div className="mt-10">
-        <p className="mb-3 text-xs uppercase tracking-[0.3em] text-foreground/50">Socials</p>
-        <div className="flex flex-col gap-2">
+      <div className="mt-6">
+        <p className="mb-2 text-[11px] uppercase tracking-[0.35em] text-foreground/50">Socials</p>
+        <div className="flex flex-col gap-1">
           {socials.map((social) => (
             <a
               key={social.name}
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-base font-semibold hover:text-foreground transition-colors"
+              className="text-sm font-semibold hover:text-foreground transition-colors"
             >
               {social.name}
             </a>

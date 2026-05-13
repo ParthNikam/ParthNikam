@@ -81,7 +81,7 @@ function ProjectCard({ project }: { project: Project }) {
   const projectUrl = demoUrl || project.github
 
   return (
-    <article className="p-4">
+    <div className="space-y-3">
       <style>{`
         @keyframes underlineAnimation {
           from {
@@ -109,9 +109,9 @@ function ProjectCard({ project }: { project: Project }) {
           animation: underlineAnimation 0.3s ease forwards;
         }
       `}</style>
-      <div className="space-y-3">
-        <div className="flex items-center">
-          <div className="flex-1">
+      <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div>
             {projectUrl ? (
               <h2>
                 <a
@@ -126,37 +126,39 @@ function ProjectCard({ project }: { project: Project }) {
             ) : (
               <h2 className="text-lg font-semibold text-foreground">{project.title}</h2>
             )}
+            {/* {project.subtitle ? (
+              <p className="mt-1 text-sm text-foreground/70">{project.subtitle}</p>
+            ) : null} */}
           </div>
           {project.github && !demoUrl ? (
             <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-xs font-semibold text-foreground hover:underline transition-all shrink-0 ml-2"
+              className="inline-flex items-center gap-1 text-xs font-semibold text-foreground hover:underline transition-all"
             >
               <GithubIcon className="size-4 shrink-0" />
               Code
             </a>
           ) : null}
         </div>
-
         <p className="text-base leading-relaxed text-foreground/80">{project.description}</p>
       </div>
-    </article>
+    </div>
   )
 }
 
 export default function Work() {
   return (
-    <div className="flex flex-col h-full overflow-y-auto p-4 sm:p-6 lg:p-20">
+    <div className="flex min-h-screen flex-col overflow-y-auto">
       <div className="max-w-2xl w-full">
-        <div className="space-y-6">
-        <div>
+        <div className="space-y-8">
+          {/* <div>
             <h1 className="text-3xl font-bold text-foreground mb-2">Work</h1>
             <p className="text-base text-foreground/60">stuff i've worked on i think is cool nuf to show</p>
-          </div>
+          </div> */}
 
-          <div className="space-y-0">
+          <div className="space-y-8">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}

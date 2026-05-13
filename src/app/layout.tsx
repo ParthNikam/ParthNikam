@@ -19,12 +19,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"/>
       </head>
-      <body className="font-sans lg:mx-60 antialiased" style={{ fontFamily: "'Titillium Web', sans-serif" }}>
-        <div className="relative flex w-full overflow-hidden bg-white/[0.96] antialiased">
-          <Sidebar />
-          <main className="flex-1 overflow-hidden">
-            {children}
-          </main>
+      <body className="font-sans antialiased" style={{ fontFamily: "'Titillium Web', sans-serif" }}>
+        <div className="relative min-h-screen w-full overflow-hidden bg-white/[0.96] antialiased px-3 py-5 sm:px-4 sm:py-7 lg:px-6 lg:py-10">
+          <div className="mx-auto flex w-full max-w-4xl items-start lg:pt-20 gap-3">
+            <Sidebar />
+            <main className="flex-1 lg:mt-8 min-w-0">
+              {children}
+            </main>
+          </div>
         </div>
       </body>
     </html>

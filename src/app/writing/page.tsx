@@ -1,6 +1,6 @@
 export default function Writing() {
   return (
-    <div className="flex flex-col h-full overflow-y-auto p-4 sm:p-6 lg:p-20">
+    <div className="flex min-h-screen flex-col overflow-y-auto">
       <div className="max-w-2xl w-full">
         <div className="space-y-6">
           <div>
