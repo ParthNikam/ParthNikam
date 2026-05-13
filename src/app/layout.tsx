@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Sidebar from "@/components/Sidebar.tsx";
+import Sidebar from "../components/Sidebar";
 
 export const metadata: Metadata = {
   title: "Parth Nikam",
